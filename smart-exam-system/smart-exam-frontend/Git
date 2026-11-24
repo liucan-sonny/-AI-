@@ -1,0 +1,11 @@
+feat: 初始化springboot项目，基础依赖
+feat: 完成question实体、mapper、service基础CRUD
+feat: 实现随机抽题接口，智能组卷功能
+feat: 新增MinIO工具，实现题目附件上传
+feat: 接入Redis缓存试卷信息
+feat: 开发AI判卷业务服务，主观题打分
+feat: 前端Vite+ElementPlus初始化
+feat: 前端完成在线答题页面
+fix: 修复controller业务逻辑写死问题，迁移到service
+feat: 增加knife4j接口文档
+test: 单元测试抽题、判分接口

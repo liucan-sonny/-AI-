@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam_system?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.exam.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+minio:
+  endpoint: http://127.0.0.1:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: exam-file
+
+knife4j:
+  enable: true
+  openapi:
+    title: 智能刷题在线考试AI判卷系统接口文档
+    description: 实训项目接口
+    email: xxx@xxx.com
+    concat: 实训开发
+    version: v1.0
